@@ -1,4 +1,4 @@
-# Cross::Talk
+# Cross::Talk [![Gem Version](https://badge.fury.io/rb/cross-talk.png)](http://badge.fury.io/rb/cross-talk) [![Build Status](https://travis-ci.org/jfredett/cross-talk.png?branch=master)](http://travis-ci.org/jfredett/cross-talk) [![Code Climate](https://codeclimate.com/github/jfredett/cross-talk.png)](https://codeclimate.com/github/jfredett/cross-talk) [![Coverage Status](https://coveralls.io/repos/jfredett/cross-talk/badge.png?branch=master)](https://coveralls.io/r/jfredett/cross-talk)
 
 NOTA BENE:
 
