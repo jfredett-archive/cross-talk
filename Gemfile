@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in cross-talk.gemspec
+gem 'rspec'
+gem 'rake'
+gem 'rspec-spies'
+
 gemspec
