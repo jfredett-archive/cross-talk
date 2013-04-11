@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Cross::Talk::VERSION
   gem.authors       = ["Joe Fredette"]
   gem.email         = ["jfredett@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{A Pub/Sub Event Management Service for Ruby Classes}
+  gem.summary       = %q{A Pub/Sub Event Management Service for Ruby Classes}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
