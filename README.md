@@ -1,6 +1,9 @@
 # Cross::Talk
 
-TODO: Write a gem description
+NOTA BENE:
+
+This is primarily lies. This is not production ready, this isn't even really
+worthy of being read. But it'll be cool when it's done.
 
 ## Installation
 
