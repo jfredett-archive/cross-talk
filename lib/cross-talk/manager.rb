@@ -27,7 +27,7 @@ module Cross
       def receivers_for(event)
         # We need to ||= here to avoid a weird behavior with Hash.new { [] } --
         # you can't destructively update the first element to it.
-        event_table[event] ||= []
+        event_table[event] ||= Set.new
       end
     end
   end
