@@ -1,7 +1,15 @@
+require 'celluloid'
+
 require "cross-talk/version"
+require 'cross-talk/manager'
 
 module Cross
   module Talk
-    # Your code goes here...
+    # Access the Event Manager
+    def self.manager
+      Celluloid::Actor[:manager] ||= Cross::Talk::Manager.new
+    end
   end
 end
+
+
