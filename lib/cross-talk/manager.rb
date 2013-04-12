@@ -11,7 +11,11 @@ module Cross
       def notify(event, sender)
         receivers_for(event).each do |receiver|
           next unless receiver.respond_to?(event)
-          receiver.async.send(event, sender)
+          if receiver.respond_to?(:async)
+            receiver.async
+          else
+            receiver
+          end.send(event, sender)
         end
       end
 
