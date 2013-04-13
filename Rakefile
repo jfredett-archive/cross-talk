@@ -25,7 +25,7 @@ end
 
 task :mutant, [:klass] do |_, args|
   puts "#### MUTANT TESTING ####"
-  system "mutant -I lib -r cross-talk --rspec-full #{args[:name] || '::Katuv'}"
+  system "mutant -I lib -r cross-talk --rspec-full #{args[:name] || '::Cross::Talk'}"
   puts "########################"
 end
 
