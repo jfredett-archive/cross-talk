@@ -13,7 +13,15 @@ the most severe variety.
 Check CI for edge support, but ideally we support MRI > 1.9, (including 2.0),
 Reasonably recent RBX, and JRuby.
 
-JRuby is broken right now though for unknown reasons.
+JRuby is broken right now though for unknown reasons. See below for details
+
+### JRuby
+
+As of 1.7.0, it appears to work fine, however, 1.7.3 and edge both crash, for
+seemingly different reasons.
+
+It's on the list of things to fix, but my experience with JRuby is minimal, and
+my motivation to fix it is low. If you'd like to try, I'd love a patch.
 
 ## Installation
 
