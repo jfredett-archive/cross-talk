@@ -44,6 +44,14 @@ module Cross
           unsilence!
         end
 
+        def listen(klass, event, timing, &block)
+          event_name = "#{klass}##{event}:#{timing}"
+          Cross::Talk.manager.notify('__new_hook:before', event_name)
+          define_singleton_method event_name, &block
+          Cross::Talk.manager.register(event_name, __get_receiver)
+          Cross::Talk.manager.notify('__new_hook:after', event_name)
+        end
+
         private
 
         def __notify_event(method, timing)

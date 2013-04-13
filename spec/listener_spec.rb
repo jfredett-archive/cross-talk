@@ -61,7 +61,7 @@ describe Cross::Talk::Listener do
   context 'late-bound listen' do
 
     before do
-      receiver.listen(Sender, :late, :after) do
+      receiver.listen(Sender, :late, :after) do |*_|
         @notified = true
       end
     end
