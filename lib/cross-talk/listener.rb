@@ -61,7 +61,6 @@ module Cross
           return Celluloid::Actor.current if is_a?(Celluloid)
           return self
         end
-
       end
 
       module ClassMethods
@@ -91,6 +90,8 @@ module Cross
 
           send(:private, method_name) if private_instance_methods.include?("__old_#{method_name}".to_sym)
           send(:protected, method_name) if protected_instance_methods.include?("__old_#{method_name}".to_sym)
+
+          nil
         end
 
         def method_added(method)
