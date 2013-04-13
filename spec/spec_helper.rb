@@ -21,6 +21,8 @@ RSpec.configure do |config|
   end
 
   config.treat_symbols_as_metadata_keys_with_true_values = true
+
+  config.extend(RSpec::Cross::Talk::DSL::Macros)
 end
 
 class RSpec::Mocks::Mock
