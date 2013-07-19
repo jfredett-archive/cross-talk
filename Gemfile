@@ -9,6 +9,8 @@ gem 'flay'
 gem 'flog'
 gem 'mutant'
 
+gem 'metriks'
+
 gem 'pry'
 
 gemspec
