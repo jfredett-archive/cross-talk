@@ -4,8 +4,6 @@ require 'pry'
 
 require 'cross-talk'
 
-require 'rspec-spies'
-
 require 'coveralls'
 Coveralls.wear!
 

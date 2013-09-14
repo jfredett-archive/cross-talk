@@ -60,7 +60,11 @@ describe Cross::Talk::Manager do
   let!(:non_receiver) { NonReceiver.new }
   let!(:stupid_receiver) { StupidReceiver.new }
 
-  before { manager.notify('an_event', nil) }
+  before do
+    stupid_receiver.stub(:an_event)
+    non_receiver.stub(:an_event)
+    manager.notify('an_event', nil)
+  end
 
   it 'notifies registered receivers when an event occurs' do
     receiver.should have_received_notification
