@@ -38,9 +38,9 @@ module Cross
           @__silenced = false
         end
 
-        def silently(&block)
+        def silently
           silence!
-          block.call
+          yield
           unsilence!
         end
 
