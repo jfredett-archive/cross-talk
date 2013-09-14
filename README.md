@@ -1,27 +1,17 @@
 # Cross::Talk [![Gem Version](https://badge.fury.io/rb/cross-talk.png)](http://badge.fury.io/rb/cross-talk) [![Build Status](https://travis-ci.org/jfredett/cross-talk.png?branch=master)](http://travis-ci.org/jfredett/cross-talk) [![Code Climate](https://codeclimate.com/github/jfredett/cross-talk.png)](https://codeclimate.com/github/jfredett/cross-talk) [![Coverage Status](https://coveralls.io/repos/jfredett/cross-talk/badge.png?branch=master)](https://coveralls.io/r/jfredett/cross-talk)
 
-NOTA BENE:
 
-This is not production ready, the basic functionality is there, but use in
-critical code is at your own risk.
+** THIS PROJECT IS NOT FOR USE **
 
-Also, this thing is almost certainly going to give you performance problems of
-the most severe variety.
+It's suffered some bitrot and needs some love, I'll get back to it, I have some
+ideas about how to make useful things with it, but I want to re-write it from
+the ground up. It originally started as a random experiment. A harebraned idea
+for a way to have a little pubsub machine in ruby, with no muss or fuss. 300
+lines later it did that, but not in a way that was easy to maintain against the
+ever evolving Celluloid.
 
-## Support
+It'll be back, and it'll be even better.
 
-Check CI for edge support, but ideally we support MRI > 1.9, (including 2.0),
-Reasonably recent RBX, and JRuby.
-
-JRuby is broken right now though for unknown reasons. See below for details
-
-### JRuby
-
-As of 1.7.0, it appears to work fine, however, 1.7.3 and edge both crash, for
-seemingly different reasons.
-
-It's on the list of things to fix, but my experience with JRuby is minimal, and
-my motivation to fix it is low. If you'd like to try, I'd love a patch.
 
 ## Installation
 
